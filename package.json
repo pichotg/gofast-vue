@@ -15,11 +15,13 @@
   "dependencies": {
     "@vueuse/core": "^12.7.0",
     "vue": "^3.5.13",
+    "vue-i18n": "10",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.3.0",
     "@iconify-json/carbon": "^1.2.7",
+    "@intlify/unplugin-vue-i18n": "^6.0.3",
     "@types/node": "^22.13.4",
     "@unocss/eslint-config": "^66.0.0",
     "@unocss/eslint-plugin": "^66.0.0",
