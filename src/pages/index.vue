@@ -1,9 +1,7 @@
 <script setup lang="ts">
-defineOptions({
-  name: 'IndexPage',
-})
 const { t } = useI18n()
-const name = ref('')
+const user = useUserStore()
+const name = ref(user.savedName)
 
 const router = useRouter()
 function go() {
