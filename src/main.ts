@@ -1,4 +1,5 @@
 import messages from '@intlify/unplugin-vue-i18n/messages'
+import { setupLayouts } from 'virtual:generated-layouts'
 import { createApp } from 'vue'
 import { createI18n } from 'vue-i18n'
 import { createRouter, createWebHistory } from 'vue-router'
@@ -16,7 +17,7 @@ const i18n = createI18n({
 
 const app = createApp(App)
 const router = createRouter({
-  routes,
+  routes: setupLayouts(routes),
   history: createWebHistory(import.meta.env.BASE_URL),
 })
 app.use(router)

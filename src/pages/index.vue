@@ -1,6 +1,4 @@
-<script setup lang="ts" generic="T extends any, O extends any">
-import { useI18n } from 'vue-i18n'
-
+<script setup lang="ts">
 defineOptions({
   name: 'IndexPage',
 })
@@ -34,3 +32,8 @@ function go() {
   }
 }
 </i18n>
+
+<route lang="yaml">
+  meta:
+    layout: home
+</route>
